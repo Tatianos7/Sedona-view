@@ -1,0 +1,36 @@
+{
+  "name": "sedona-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:styles": "stylelint '**/*.scss'",
+    "lint:scripts": "eslint . --ext .js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "1.32"
+  },
+  "dependencies": {
+    "eslint": "^9.27.0",
+    "html-validator": "^6.0.1",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard-scss": "^15.0.1"
+  }
+}
