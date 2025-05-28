@@ -1,0 +1,54 @@
+.search {
+    &__wrapper {
+      width: 100%;
+      padding: 33px 25px 49px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    &__title {
+      margin: 0 0 33px;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 26px;
+  
+      @media (min-width: $tablet-width) {
+        font-size: 30px;
+      }
+    }
+  
+    &__description {
+      font-size: 14px;
+      line-height: 24px;
+      padding-bottom: 27px;
+  
+      br {
+        display: none;
+  
+        @media (min-width: $tablet-width) {
+          display: block;
+        }
+      }
+    }
+  
+    &__button {
+      font-family: "PT Sans";
+      width: 270px;
+      height: 58px;
+      border: none;
+      background: $blue;
+      color: #ffffff;
+      font-size: 21px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+  
+      @media (min-width: $tablet-width) {
+        width: 458px;
+      }
+    }
+  }
+  
+  iframe {
+    width: 100%;
+  }
