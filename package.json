@@ -9,6 +9,7 @@
   "scripts": {
     "start": "gulp serve",
     "build": "gulp build",
+    "clean": "gulp clean",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:styles": "stylelint '**/*.scss'",
     "lint:scripts": "eslint . --ext .js"
@@ -17,13 +18,22 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "browser-sync": "^3.0.4",
+    "cssnano": "^7.0.7",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
     "gulp-imagemin": "^9.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "sass": "1.32"
   },
