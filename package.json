@@ -7,12 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "gulp serve",
     "build": "gulp build",
-    "clean": "gulp clean",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:styles": "stylelint '**/*.scss'",
-    "lint:scripts": "eslint . --ext .js"
+    "start": "gulp"
   },
   "keywords": [],
   "author": "",

@@ -30,6 +30,10 @@ function copyHtml() {
     .pipe(browserSync.stream());
 }
 
+function copyImages() {
+  return src(`${config.src}/images/**/*`)
+    .pipe(dest(`${config.dest}/images`));
+}
 
 function serve() {
   browserSync.init({
@@ -40,10 +44,11 @@ function serve() {
 
   watch(`${config.src}/scss/**/*.scss`, compileSass).on('change', browserSync.reload);
   watch(`${config.src}/*.html`, copyHtml).on('change', browserSync.reload);
+  watch(`${config.src}/images/**/*`, copyImages).on('change', browserSync.reload);
 }
 
 
-exports.build = series(clean, parallel(compileSass, copyHtml));
-exports.serve = series(clean, parallel(compileSass, copyHtml), serve);
+exports.build = series(clean, parallel(compileSass, copyHtml, copyImages));
+exports.serve = series(clean, parallel(compileSass, copyHtml, copyImages), serve);
 exports.default = exports.serve;
 

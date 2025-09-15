@@ -9,6 +9,8 @@
 @import './blocks/advantages.scss';
 @import './blocks/search.scss';
 @import './blocks/page-footer.scss';
+@import 'blocks/modal-success';
+@import 'blocks/modal-error';
 @import './blocks/modal-search.scss';
 @import './blocks/search-form.scss';
 @import './blocks/field.scss';
@@ -17,3 +19,5 @@
 @import './blocks/photo-container.scss';
 @import './blocks/gallery.scss';
 @import './blocks/video.scss';
+
+@import './blocks/feedback.scss';

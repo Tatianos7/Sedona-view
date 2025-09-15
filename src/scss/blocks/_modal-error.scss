@@ -1,0 +1,20 @@
+.modal--error .modal__block {
+    display: none;
+    text-align: center;
+    @media (min-width: $tablet-width) {
+      width: 400px;
+    }
+  }
+  
+  .modal__close-error {
+    width: 180px;
+    height: 58px;
+    background: $blue;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  

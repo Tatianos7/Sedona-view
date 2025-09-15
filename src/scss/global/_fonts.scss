@@ -3,8 +3,8 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    src: url("/source/fonts/ptsans.woff2") format("woff2"),
-         url("/source/fonts/ptsans.woff") format("woff")
+    src: url("../font/ptsans.woff2") format("woff2"),
+         url("../font/ptsans.woff") format("woff")
         
 }
 
@@ -13,6 +13,6 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-    src: url("/source/fonts/ptsansbold.woff2") format("woff2"),
-         url("/source/fonts/ptsansbold.woff") format("woff")
+    src: url("../font/ptsansbold.woff2") format("woff2"),
+         url("../font/ptsansbold.woff") format("woff")
 }

@@ -1004,7 +1004,8 @@ iframe {
 }
 .gallery__photo {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .gallery__item-caption {
@@ -1166,7 +1167,7 @@ iframe {
   cursor: pointer;
 }
 .control-button:hover {
-  color: #d9d9d9;
+  color: rgb(216.75, 216.75, 216.75);
 }
 @media (max-width: 600px) {
   .control-button {
@@ -1450,6 +1451,7 @@ iframe {
   display: flex;
   align-items: center;
   padding: 10px 10px 10px 0;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   text-transform: initial;
   font-weight: bold;
@@ -1509,4 +1511,4 @@ iframe {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-}
+}/*# sourceMappingURL=main.css.map */
