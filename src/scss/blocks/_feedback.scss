@@ -362,6 +362,12 @@
       display: none;
     }
   }
+
+  &__section-line {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
   
   &__section--introduce::before {
     @media (min-width: $tablet-width) {
@@ -450,14 +456,14 @@
   &__button-phone,
   &__button-mail {
     position: absolute;
-    top: 41px;
+    top: 19px;
     right: 0;
     border: none;
     width: 58px;
     height: 58px;
     background-color: $silvergrey;
     @media (min-width: $tablet-width) {
-      top: 47px;
+      top: 25px;
     }
     @media (min-width: $desktop-width) {
       top: 0;
@@ -539,7 +545,7 @@
     width: 220px;
     display: flex;
     align-items: center;
-    padding: 10px 10px 10px 0;
+    padding: 10px 10px 10px 10px;
     max-width: fit-content; // от случайного нажатия на чекбокс.
     text-transform: initial;
     font-weight: bold;

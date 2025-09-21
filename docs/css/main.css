@@ -1288,6 +1288,11 @@ iframe {
   }
 }
 @media (min-width: 768px) {
+  .feedback__section-line {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
   .feedback__section--introduce::before {
     display: none;
   }
@@ -1364,7 +1369,7 @@ iframe {
 }
 .feedback__button-phone, .feedback__button-mail {
   position: absolute;
-  top: 41px;
+  top: 19px;
   right: 0;
   border: none;
   width: 58px;
@@ -1373,7 +1378,7 @@ iframe {
 }
 @media (min-width: 768px) {
   .feedback__button-phone, .feedback__button-mail {
-    top: 47px;
+    top: 25px;
   }
 }
 @media (min-width: 1200px) {
@@ -1449,7 +1454,7 @@ iframe {
   width: 220px;
   display: flex;
   align-items: center;
-  padding: 10px 10px 10px 0;
+  padding: 10px 10px 10px 10px;
   max-width: fit-content;
   text-transform: initial;
   font-weight: bold;
